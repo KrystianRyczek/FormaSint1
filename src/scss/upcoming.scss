@@ -1,0 +1,225 @@
+.upcoming-product-box{
+    margin:0 auto 0 auto;
+    @media screen and (max-width: 360px) {
+        width: 328px;
+    }
+    @media screen and (min-width: 361px) {
+        width: 1836px;
+    }
+}
+
+.upcoming-product{
+
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 360px) {
+        height: 64px;
+        row-gap: 4px;
+        margin-top: 36px;
+    }
+    @media screen and (min-width: 361px) {
+        height: 78px;
+        margin-top: 96px;
+        row-gap: 10px;
+    }
+}
+
+
+.upcoming-product-title{
+    font-weight: 700;
+    line-height: 1,2;
+    letter-spacing: -0.02;
+    color: #1D1D1D;
+    @media screen and (max-width: 360px) {
+        font-size: 32px; 
+    }
+    @media screen and (min-width: 361px) {
+        font-size: 42px; 
+    }
+}
+.upcoming-product-p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,5;
+    letter-spacing: -0.01;
+    color: #1D1D1D;
+    text-transform: uppercase;
+}
+.upcoming-product-list{
+    display: flex;
+
+
+    @media screen and (max-width: 360px) {
+        width: 100%;
+        gap: 16px;
+        margin: 32px 0 32px 0;
+    }
+    @media screen and (min-width: 361px) {
+
+        gap: 24px;
+        margin: 42px 0 42px 0;      
+    }
+
+}
+.upcoming-product-item-box{
+    background-color: #EAEAE8;
+    border-radius: 6px;
+    justify-items: center;
+    @media screen and (max-width: 360px) {
+        width: 300px;
+        height: 300px;
+    }
+    @media screen and (min-width: 361px) {
+        width: 441px;
+        height: 441px;
+    }
+}
+.upcoming-product-item-atr-box{
+    height: 30px;
+    display: flex;
+    font-size: 16px;
+    padding: 16px 16px 0 16px;
+
+    @media screen and (max-width: 360px) {
+        gap:122px;
+    }
+    @media screen and (min-width: 361px) {
+        gap: 263px;        
+    }
+}
+.hart-svg{
+    @media screen and (max-width: 360px) {
+        width: 19px;
+        height: 17px;       
+    }
+    @media screen and (min-width: 361px) {
+        width: 24px;
+        height: 24px;       
+    }
+}
+.upcoming-product-item-atr-p{
+
+    align-content: center;
+    justify-items: center;
+    border-radius: 1000px;
+    background-color: #D9D6B0;
+    padding: 0 auto 0 auto;
+    text-transform: uppercase;
+    @media screen and (max-width: 360px) {
+        width: 122px;
+        height: 30px;  
+    }
+    @media screen and (min-width: 361px) {
+        
+    }
+}
+.upcoming-product-image{
+
+    @media screen and (max-width: 360px) {
+        width: 268px;
+        height: 268px;
+    }
+    @media screen and (min-width: 361px) {
+        width: 380px;
+        height: 380px;
+
+    }
+}
+.upcoming-product-description-box{
+
+    margin-top: 24px;
+    padding: 0 12px 0 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    @media screen and (max-width: 360px) {
+        width: 300px;
+    }
+    @media screen and (min-width: 361px) {
+        width: 441px;
+    }
+}
+.upcoming-product-description{
+    font-weight: 600;
+
+    line-height: 1,2;
+    color: #1D1D1D;
+    @media screen and (max-width: 360px) {
+        font-size: 18px;
+    }
+    @media screen and (min-width: 361px) {
+        font-size: 22px;
+    }
+}
+.upcoming-product-price{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,4;
+    color: #1D1D1D;
+    text-transform: uppercase;
+}
+.hide{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+li.upcoming-product-item::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    display: block;
+    background: #1D1D1D;
+    transition: transform 0.5s;
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+ 
+li.upcoming-product-item:hover::after{
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+  .upcoming-product-list-box{
+    position: relative;
+  }
+  .upcoming-next-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    top: 40%;
+    height: 72px;
+    width: 72px;
+    border-radius: 1000px;
+    border: solid 1px #EAEAE8;
+    background-color: #FFFFFF;
+    
+    @media screen and (max-width: 360px) {
+        right: 0px;
+    }
+    @media screen and (min-width: 361px) {
+        right: 32px;
+    }
+    
+  }
+  .upcoming-next-btn-span{
+    font-size: 20px;
+  }
+  .catBox{
+    background-color: #EAEAE8;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    justify-items: center;
+        width: 300px;
+        height: 300px;
+
+
+  }
